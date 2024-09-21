@@ -1,0 +1,87 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ffcc66, #ff9966);
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* this animation for floating text */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    animation: float animate__flash 4s ease-in-out infinite;
+}
+
+
+.photo-section {
+    margin-bottom: 15px;
+}
+
+.michelle-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.card h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.note{
+    color: #ff4c3b;
+    animation: animate__flash 4s ease-in-out infinite;
+
+}
+.invite-btn {
+    padding: 12px 20px;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.invite-btn:hover {
+    background-color: #ff4c3b;
+    transform: scale(1.1);
+}
